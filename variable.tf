@@ -17,7 +17,7 @@ variable "security" {
 
 variable "root_block" {
   type = object({
-    volumesize = string
+    volumesize = number
     volumetype = string
   })
 }
