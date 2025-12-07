@@ -8,7 +8,7 @@ variable "subnetid" {
 }
 
 variable "public_ip_address" {
-  type = string
+  type = bool
 }
 
 variable "security" {

@@ -1,6 +1,6 @@
 output "instanceid" {
   value = {
-    for k , id in aaws_instance.ubuntu:
+    for k , id in aws_instance.ubuntu:
     k => id
   }
 }
