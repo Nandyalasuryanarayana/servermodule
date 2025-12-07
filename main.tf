@@ -24,6 +24,7 @@ resource "aws_instance" "ubuntu" {
     volume_type = var.root_block.volumetype
     volume_size = var.root_block.volumesize
   }
+  user_data_base64 = base64encode(var.user_data)
 }
 
 

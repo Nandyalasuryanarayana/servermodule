@@ -26,6 +26,10 @@ variable "aws_key_pair" {
   type = string
 }
 
+variable "user_data" {
+  type = string
+}
+
 
 
 
