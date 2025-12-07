@@ -11,8 +11,7 @@ resource "aws_instance" "ubuntu" {
   instance_type = var.instance_type
   key_name = aws_key_pair.public_key.id
   associate_public_ip_address = var.public_ip_address
-  for_each = var.subnetid
-  subnet_id = each.value
+  subnet_id= var.subnetid
   security_groups = var.security
   root_block_device {
     volume_type = var.root_block.volumetype

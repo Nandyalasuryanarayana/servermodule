@@ -4,7 +4,7 @@ variable "instance_type" {
 }
 
 variable "subnetid" {
- type = map(string)
+ type = string
 }
 
 variable "public_ip_address" {
