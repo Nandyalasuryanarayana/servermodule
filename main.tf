@@ -15,8 +15,8 @@ resource "aws_instance" "ubuntu" {
   subnet_id = each.value
   security_groups = var.security
   root_block_device {
-    volume_type = var.root_block_device.volumetype
-    volume_size = var.root_block_device.volumesize
+    volume_type = var.root_block.volumetype
+    volume_size = var.root_block.volumesize
   }
 }
 
